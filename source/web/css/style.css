@@ -1,0 +1,690 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*-- Reset Code --*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*-- Reset Code --*/
+
+/*-- Fonts --*/
+@font-face{
+	font-family: 'Nunito-Regular';
+	src:url(../fonts/Nunito-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family: 'Oswald-Light';
+	src:url(../fonts/Oswald-Light.ttf) format('truetype');
+}
+/*-- Fonts --*/
+
+/*-- Index-Page-Styling --*/
+
+body {
+    background-color: #fff3e9;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-family: Oswald-Light;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.clear{
+	clear:both;
+}
+
+.tabs-menu {
+	width: 60%;
+	float: left;
+	background: url("../images/model.jpg") no-repeat 0px 0px;
+	background-size: cover;
+}	
+.tabs-menu ul {
+    width: 40%;
+    padding: 30px 20px;
+}
+.tabs-menu ul li a {
+	display: block;
+    padding: 20px 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-indent: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: Nunito-Regular;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tabs-menu ul li a:hover {
+    background-color: rgba(0,0,0,0.5);
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a {
+    color: #FFF;
+}
+.tab-grids {
+	width: 40%;
+	float: right;
+}
+.signin {
+    background:rgba(255, 255, 255, 0.8) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+    filter:Alpha(opacity=80);
+    background:#fff;/*实现IE背景透明*/
+}
+form {
+    width: 60%;
+    padding: 40px 30px;
+    margin: 0 auto;
+}
+p {
+    color: #000;
+    font-family: Oswald-Light;
+    font-size: 17px;
+}
+input.user {
+    width: 83%;
+    padding: 5px 10px 5px 35px;
+    background: #efefef url("../images/user.png") no-repeat 5px 3px;
+    font-family: Oswald-Light;
+    font-size: 15px;
+    color: #927587;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    margin: 5px 0 10px 0;
+}
+input.mail {
+    width: 83%;
+    padding: 5px 10px 5px 35px;
+    background: #efefef url("../images/mail.png") no-repeat 5px 5px;
+    font-family: Oswald-Light;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #927587;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    margin: 5px 0 10px 0;
+}
+input.pass {
+    width: 83%;
+    padding: 5px 10px 5px 35px;
+    background: #efefef url("../images/pass.png") no-repeat 5px 4px;
+    font-family: Oswald-Light;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #927587;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    margin: 10px 0;
+}
+
+.outline-inward {
+    display: inline-block;
+    position: relative;
+    background-color: #EEE;
+    color: #791653;
+    width: 50%;
+    text-align: center;
+    padding: 4px 0;
+    font-family: Nunito-Regular;
+    font-size: 20px;
+    margin: 17px 0 0;
+    margin-left: 27%;
+}
+.outline-inward:before {
+  content: '';
+  position: absolute;
+  border: #ececec solid 4px;
+  top: -16px;
+  right: -16px;
+  bottom: -16px;
+  left: -16px;
+  opacity: 0;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: top right bottom left;
+  transition-property: top right bottom left;
+}
+.outline-inward:hover:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  opacity: 1;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 100px;
+}
+.footer p {
+    font-family: Oswald-Light;
+    color: #000;
+    font-size: 16px;
+}
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+	color: #791653;
+}
+
+/*-- Index-Page-Styling --*/
+
+/*--- Responsinator Code ---*/
+
+@media screen and (max-width: 1920px) {
+    h1 {
+        margin: 100px 0;
+        font-size: 40px;
+    }
+    .container {
+        width: 55%;
+    }
+    .footer {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:1680px) {
+    h1 {
+        margin: 80px 0;
+        font-size: 40px;
+    }
+    .container {
+        width: 60%;
+    }
+    .footer {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    h1 {
+        margin: 30px 0;
+        font-size: 35px;
+    }
+    .container {
+        width: 70%;
+    }
+    .tabs-menu ul {
+        width: 35%;
+    }
+    .footer {
+        margin: 50px 0 20px 0;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    h1 {
+        margin: 50px 0;
+        font-size: 35px;
+    }
+    .footer {
+        margin: 80px 0 20px 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    h1 {
+        margin: 30px 0;
+    }
+    .container {
+        width: 75%;
+    }
+    .tabs-menu ul {
+        width: 40%;
+    }
+    form {
+        width: 70%;
+        padding: 40px 20px;
+        margin: 0 auto;
+    }
+    input.user {
+        width: 80%;
+    }
+    input.mail {
+        width: 80%;
+    }
+    input.pass {
+        width: 80%;
+    }
+    .outline-inward {
+        margin-left: 28%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .tabs-menu ul {
+        width: 45%;
+    }
+    form {
+        width: 80%;
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width:966px) {
+    .container {
+        width: 80%;
+    }
+    .tabs-menu ul {
+        width: 45%;
+    }
+    form {
+        width: 80%;
+        padding: 40px 10px;
+    }
+    .outline-inward {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:853px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        width: 90%;
+    }
+    .tabs-menu ul {
+        width: 45%;
+        padding: 30px 20px;
+    }
+    form {
+        width: 80%;
+        padding: 40px 10px;
+    }
+    input.user {
+        width: 80%;
+    }
+    input.mail {
+        width: 80%;
+    }
+    input.pass {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        margin: 60px 0;
+    }
+.container {
+    width: 85%;
+}
+.tabs-menu {
+    width: 60%;
+}
+.tabs-menu ul {
+    width: 40%;
+    padding: 70px;
+}
+.tabs-menu ul li a {
+    padding: 19px 5px;
+    text-indent: 5px;
+    font-size: 20px;
+}
+.tab-grids {
+    width: 100%;
+}
+form {
+    width: 85%;
+    padding: 30px 10px;
+}
+    p {
+        font-size: 16px;
+    }
+    input.user {
+        width: 80%;
+        padding: 3px 10px 3px 35px;
+        background: #efefef url("../images/users.png") no-repeat 8px 5px;
+        font-size: 14px;
+    }
+    input.mail {
+        width: 80%;
+        padding: 3px 10px 3px 35px;
+        background: #efefef url("../images/mails.png") no-repeat 8px 5px;
+        font-size: 14px;
+    }
+    input.pass {
+        width: 80%;
+        padding: 3px 10px 3px 35px;
+        background: #efefef url("../images/passs.png") no-repeat 8px 5px;
+        font-size: 14px;
+    }
+    .outline-inward {
+        font-size: 17px;
+        margin: 5px 0 0;
+        margin-left: 27%;
+    }
+    .footer {
+        margin: 150px 0 0 0;
+    }
+}
+
+@media screen and (max-width:736px) {
+    h1 {
+        margin: 40px 0;
+    }
+    .container {
+        width: 85%;
+    }
+    .footer {
+        margin: 50px 0 20px 0;
+    }
+}
+
+@media screen and (max-width:667px) {
+    h1 {
+        margin: 40px 0;
+    }
+    .container {
+        width: 95%;
+    }
+    .footer {
+        margin: 50px 0 20px 0;
+    }
+    .footer p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        width: 70%;
+    }
+    .tabs-menu {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .tabs-menu ul {
+        width: 40%;
+    }
+    .tab-grids {
+        width: 100%;
+    }
+    form {
+        width: 70%;
+        padding: 40px 10px;
+    }
+    input.user {
+        width: 84%;
+        padding: 5px 10px 5px 30px;
+        background: #efefef url("../images/users.png") no-repeat 7px 7px;
+    }
+    input.mail {
+        width: 84%;
+        padding: 5px 10px 5px 30px;
+        background: #efefef url("../images/mails.png") no-repeat 7px 7px;
+    }
+    input.pass {
+        width: 84%;
+        padding: 5px 10px 5px 30px;
+        background: #efefef url("../images/passs.png") no-repeat 7px 7px;
+    }
+    .outline-inward {
+        font-size: 18px;
+        margin: 15px 0 0;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:603px) {
+    h1 {
+        margin: 40px 0;
+        font-size: 30px;
+    }
+    .container {
+        width: 65%;
+    }
+    .tabs-menu {
+        width: 100%;
+    }
+    .tabs-menu ul {
+        width: 45%;
+    }
+    .tabs-menu ul li a {
+        padding: 15px 5px;
+    }
+    .tab-grids {
+        width: 100%;
+    }
+    input.user {
+        width: 83%;
+        padding: 3px 10px 3px 30px;
+    }
+    input.mail {
+        width: 83%;
+        padding: 3px 10px 3px 30px;
+    }
+    input.pass {
+        width: 83%;
+        padding: 3px 10px 3px 30px;
+    }
+    .outline-inward {
+        margin-left: 25%;
+    }
+    .footer {
+        margin: 50px 0 20px 0;
+    }
+}
+
+@media screen and (max-width:568px) {
+    h1 {
+        font-size: 30px;
+    }
+    .container {
+        width: 65%;
+    }
+    .tabs-menu ul {
+        width: 45%;
+    }
+    .tabs-menu ul li a {
+        padding: 15px 5px;
+    }
+    input.user {
+        width: 82%;
+    }
+    input.mail {
+        width: 82%;
+    }
+    input.pass {
+        width: 82%;
+    }
+    .outline-inward {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:533px) {
+    .container {
+        width: 70%;
+    }
+    form {
+        width: 65%;
+    }
+    input.user {
+        width: 81%;
+        padding: 3px 10px 3px 30px;
+        background: #efefef url("../images/users.png") no-repeat 6px 5px;
+    }
+    input.mail {
+        width: 81%;
+        padding: 3px 10px 3px 30px;
+        background: #efefef url("../images/mails.png") no-repeat 6px 5px;
+    }
+    input.pass {
+        width: 81%;
+        padding: 3px 10px 3px 30px;
+        background: #efefef url("../images/passs.png") no-repeat 6px 5px;
+    }
+    .outline-inward {
+        margin-left: 24%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .tabs-menu ul li a {
+        padding: 12px 5px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .container {
+    width: 85%;
+}
+.tabs-menu ul li a {
+    padding: 10px 5px;
+    font-size: 18px;
+}
+form {
+    width: 75%;
+}
+.footer p {
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width:384px) {
+    form {
+        padding: 20px 10px;
+    }
+    .footer {
+        margin: 50px 10px 20px 10px;
+    }
+    .footer p {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .container {
+        width: 90%;
+    }
+    .tabs-menu ul {
+        width: 45%;
+    }
+    .tabs-menu ul li a {
+        padding: 10px 5px;
+        text-indent: 5px;
+        font-size: 17px;
+    }
+    form {
+        width: 75%;
+    }
+    .outline-inward {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    h1 {
+    font-size: 27px;
+    margin: 40px 0;
+}
+.container {
+    width: 95%;
+}
+.tabs-menu ul {
+    width: 50%;
+    padding: 10px;
+}
+.tabs-menu ul li a {
+    padding: 10px 5px;
+    font-size: 18px;
+}
+form {
+    width: 75%;
+}
+.footer {
+    margin: 50px 10px 20px 10px;
+}
+.footer p {
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width:240px) {
+    h1 {
+        font-size: 20px;
+        margin: 30px 0;
+    }
+    .tabs-menu ul li a {
+        padding: 9px 5px;
+        font-size: 12px;
+    }
+    form {
+        width: 80%;
+        padding: 20px 5px;
+    }
+    input.user {
+        width: 77%;
+    }
+    input.mail {
+        width: 77%;
+    }
+    input.pass {
+        width: 77%;
+    }
+    .outline-inward {
+        font-size: 15px;
+        margin: 5px 0 0;
+        margin-left: 25%;
+    }
+    .footer p {
+        font-size: 13px;
+    }
+}
+
+
+
+/*--- Responsinator Code ---*/

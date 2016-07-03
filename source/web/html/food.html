@@ -1,0 +1,72 @@
+<script src="/web/js/food.js"></script>
+<link rel="stylesheet" src="/web/css/food.css">
+<div id="search">
+    <form class="form-search">
+        <input class="input-medium search-query" type="text" /> <button type="submit" class="btn">查找</button>
+    </form>
+</div>
+<div id="foods">
+    <div id="addfood" class="food-div">
+        <div class="food-img">
+            <img onclick="" src="/web/image/plus.png" width="120px" height="120px">
+        </div>
+        <div class="food-detail">
+            <input class="add-title">
+            <br/>
+            <textarea class="add-desc"></textarea>
+            <br/>
+            <input id="img" type="file">
+            <button type="button" id="savebtn" name="foodname" hidden="hidden" class="btn btn-info" onclick="Foodns.save()">
+                <text>添加</text>
+            </button>
+        </div>
+    </div>
+    <div id="foodname" class="food-div">
+        <div class="food-img">
+            <img src="/web/image/food.png" width="120px" height="120px">
+        </div>
+        <div class="food-detail">
+            <input class="food-title" readonly="readonly" value="foodname">
+            <br/>
+            <textarea class="food-desc" readonly="readonly" value="food describe"></textarea>
+            <br/>
+            <button style="DISPLAY:none" type="button" id="foodname-savebtn" name="foodname" hidden="hidden" class="btn btn-info" onclick="Foodns.save()">
+                <text>保存</text>
+            </button>
+            <button type="button" id="foodname-modifybtn" name="foodname" class="btn btn-info" onclick="Foodns.modify(this.name)">
+                <text>修改</text>
+            </button>
+            <button type="button" name="foodname" class="btn btn-danger" onclick="Foodns.delete(this.name)">
+                <text>删除</text>
+            </button>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <ul class="pagination">
+                <li>
+                    <a href="#">&laquo;第一页</a>
+                </li>
+                <!--todo add loop-->
+                <li>
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+                <li>
+                    <a href="#">下一页&raquo;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

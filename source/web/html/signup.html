@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nourriture 注册啦~</title>
+<!-- For-Mobile-Apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Signup & Profile Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps -->
+<!-- Style --> <link rel="stylesheet" href="/web/css/style.css" type="text/css" media="all" />
+
+	<script src="/web/js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#tab2").hide();
+			$("#tab3").hide();
+			$(".tabs-menu a").click(function(event){
+				event.preventDefault();
+				var tab=$(this).attr("href");
+				$(".tab-grid").not(tab).css("display","none");
+				$(tab).fadeIn("slow");
+			});
+		});
+	</script>
+	<style type="text/css">
+		#adver{width:400px;height:268px;position:relative;}
+		.pic{width:400px;height:268px;position:absolute;}
+		.pic img{border:none;}
+		#adver ul{position:absolute;right:0;bottom:0;list-style-type:none;margin:0;padding:0;}
+		#adver ul li{float:left;height:20px;width:20px;background:url(trans.png) no-repeat;margin-left:1px;text-align:center;line-height:20px;font-size:12px;font-family:Tahoma, Geneva, sans-serif;}
+	</style>
+	<script src="/web/js/jquery-1.12.3.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		/*
+		 *标题:jQuery四图切换动画仿flash展示效果
+		 *时间：2010年8月1日
+		 *jQuery版本：1.4.2
+		 */
+
+
+		$(document).ready(function(){
+
+			$("#adver ul li").eq(0).css({"background":"black","cursor":"pointer","color":"red","font-size":"14px"});//页面载入后默认第一幅图的样式
+
+			/*
+			 *定时器自动滑动相关
+			 */
+			c = 1;   //全局自增属性,可理解为指针变量，指向当前显示标签
+			function circle(){    //执行样式切换
+				var k = c%$("#adver ul li").length;         //利用求余实现自动循环
+				$("#adver ul li").eq(k).css({"background":"black","cursor":"pointer","color":"red","font-size":"14px"});
+				$(".pic").each(
+						function(j){
+							if(j!=k){
+								$(this).fadeOut(1000);
+							}else{
+								$(this).fadeIn(1000);
+							}
+						}
+				);
+				$("#adver ul li").each(function(j){
+					if(k!=j){
+						$("#adver ul li").eq(j).css({"background":"url(trans.png)","color":"black","font-size":"12px"});
+					}
+				});
+				c++;
+			}
+			int = setInterval(circle,1000*3);
+
+			/*
+			 *鼠标交互相关
+			 */
+			$("#adver ul li").each(function(i){
+				$(this).hover(
+						function(){
+							c = i;    //将定时器指向当前鼠标移动到的元素上
+							$(this).css({"background":"black","cursor":"pointer","color":"red","font-size":"14px"});
+							$("#adver ul li").each(function(k){
+								if(k!=i){
+									$(this).css({"background":"url(trans.png)","color":"black","font-size":"12px"});
+								}
+							});
+							$(".pic").each(
+									function(j){
+										if(j!=i){
+											$(this).fadeOut(1000);
+										}else{
+											$(this).fadeIn(1000);
+										}
+									}
+							);
+						},function(){
+						}
+				);
+			});
+		});
+	</script>
+	<style>
+		.a{
+			float:right;
+		}
+		.b{
+			float:left;
+		}
+		</style>
+</head>
+
+
+
+
+</head>
+
+<body>
+
+	<h1>Nourriture 注册页面</h1>
+
+<div class="container">
+<div>
+	<div id="adver" class="a">
+		<div class="pic" style="display:block;"><a href="#"><img src="/web/image/6.jpg" /></a></div>
+		<div class="pic" style="display:none;"><a href="#"><img src="/web/image/7.jpg" /></a></div>
+		<div class="pic" style="display:none;"><a href="#"><img src="/web/image/8.jpg" /></a></div>
+		<div class="pic" style="display:none;"><a href="#"><img src="/web/image/9.jpg" /></a></div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="tab-grids">
+		<div id="tab1" class="tab-grid">
+			<div class="signin">
+		     	<form>
+		     		<p>用户名</p>
+			      	<input type="text" class="user" value="Nourriture" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nourriture';}" />
+		     		<p>邮箱</p>
+			      	<input type="text" class="mail" value="Nourriture@163.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nourriture@163.com';}" />
+			      	<p>密码</p>
+			      	<input type="password" class="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
+			      	<p>重复密码</p>
+			      	<input type="password" class="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
+					<a class="button outline-inward">提交</a>
+			 	</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="clear"> </div>
+
+</div>
+</div>
+
+<div class="footer">
+     <p>来自于Nourriture~</p>
+</div>
+
+
+</body>
+</html>
