@@ -2,6 +2,10 @@
     padding: 10px;
 }
 
+#rightfoods {
+    margin-left: 350px;
+}
+
 #foods {
     /*border: 1px solid #cccccc;*/
     padding:10px;
@@ -11,7 +15,7 @@
     width: 1000px;
     _height:200px;
     min-height:200px;
-    background-color: #f2f0f2;
+    /*background-color: #f2f0f2;*/
 }
 
 .food-div {
@@ -30,11 +34,12 @@
 }
 
 .food-detail {
-    margin-left: 10px;
+    margin-left: 20px;
     float: right;
 }
 
 .food-title {
+    font-size: large;
     width: 600px;
     margin-top: 0px;
     border: 0px;
@@ -59,4 +64,8 @@
 
 #img {
     display: inline;
+}
+
+#money {
+    color: red;
 }

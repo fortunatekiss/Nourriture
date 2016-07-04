@@ -1,3 +1,7 @@
 .column {
     font-size: x-large;
 }
+
+.input-group {
+    display: inline;
+}

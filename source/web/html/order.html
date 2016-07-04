@@ -1,76 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/web/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
+    <script src="/web/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+    <script src="/web/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<!--<link rel="stylesheet" href="/web/bootstrap/css/bootstrap.min.css">-->
+
+<!--<script src="/web/js/jquery-1.12.3.min.js"></script>-->
+<script type="text/javascript">
+    $(window).load(function () {
+        alert("hello");
+        $("#fromdate").datetimepicker({
+            language: 'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+    });
+</script>
+<body>
+<label style="width: 10%; font-size: 25px" class="col-md-2 control-label">筛选: </label>
+<input style="width: 10%;" id="fromdate" size="16" type="text" value="开始日期" readonly class="form_date form-control col-xs-2">
+<input style="width: 10%" id="todate" size="16" type="text" value="结束日期" readonly class="form_date form-control col-xs-2">
+<br>
+<br>
+<br>
+
 <div id="showorder">
-<table class="table" contenteditable="true">
-    <thead>
-    <tr>
-        <th class="column"><div>订单号</div></th>
-        <th class="column">菜品</th>
-        <th class="column" width="700px">
-            <div style="display: inline; float: left">
-                交付时间
-            </div>
-            <div style="display: inline">
-                <div style="display: inline" class="col-xs-3">
-                    <input class="form-control input-sm">
-                </div>
-                <div style="display: inline" class="col-xs-3">
-                    <input class="form-control input-sm">
-                </div>
-                <input type="button" class="btn" value="筛选">
-            </div>
-        </th>
-        <th class="column">状态</th>
-        <th class="column">详情</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="info">
-        <td>1</td>
-        <td>西红柿</td>
-        <td>01/04/2012</td>
-        <td></td>
-        <td>交易中</td>
-        <td><a>...</a></td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>炒鸡蛋</td>
-        <td>01/04/2012</td>
-        <td></td>
+    <table class="table" contenteditable="true">
+        <thead>
 
-        <td>交易成功</td>
-        <td></td>
+        <tr>
+            <th class="column">
+                <div>订单号</div>
+            </th>
+            <th class="column">菜品</th>
+            <th class="column" width="700px">时间</th>
+            <th class="column">状态</th>
+            <th class="column">详情</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="info">
+            <td>1</td>
+            <td>西红柿</td>
+            <td>01/04/2012</td>
+            <td>交易中</td>
+            <td><a>...</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>炒鸡蛋</td>
+            <td>01/04/2012</td>
+            <td>交易成功</td>
+            <td></td>
 
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>香锅</td>
-        <td>02/04/2012</td>
-        <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>香锅</td>
+            <td>02/04/2012</td>
+            <td>交易成功</td>
+            <td></td>
 
-        <td>交易成功</td>
-        <td></td>
+        </tr>
+        <tr class="warning">
+            <td>3</td>
+            <td>炒芹菜</td>
+            <td>03/04/2012</td>
+            <td>交易失败</td>
+            <td></td>
 
-    </tr>
-    <tr class="warning">
-        <td>3</td>
-        <td>炒芹菜</td>
-        <td>03/04/2012</td>
-        <td></td>
-
-        <td>交易失败</td>
-        <td></td>
-
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>饺子</td>
-        <td>04/04/2012</td>
-        <td></td>
-
-        <td>交易成功</td>
-        <td></td>
-
-    </tr>
-    </tbody>
-</table>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>饺子</td>
+            <td>04/04/2012</td>
+            <td>交易成功</td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
+</body>

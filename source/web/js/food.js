@@ -2,7 +2,7 @@
  * Created by leelddd on 7/3/2016.
  */
 
-document.getElementById("img").addEventListener('change',readFile,false);
+//document.getElementById("img").addEventListener('change',readFile,false);
 
 function readFile(){
     var file = this.files[0];
@@ -17,15 +17,59 @@ function readFile(){
     }
 }
 
+var hello = "hi";
+
 var Foodns={
+
+    openUpload: function () {
+        layer.open({
+            title: "上传图片",
+            type: 2,
+            area: ['400px', '100px'],
+            fix: false, //不固定
+            maxmin: true,
+            content: '/web/html/newFoodPic.html'
+        });
+    },
+
+    open: function(){
+        //window.open("/web/html/newFood.html","def","height=500,width=500,location=no");
+        layer.open({
+            title: "新菜单",
+            type: 2,
+            area: ['450px', '530px'],
+            fix: false, //不固定
+            maxmin: true,
+            content: '/web/html/newFood.html'
+        });
+    },
+
+    add: function(){
+        //todo  ajax
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    },
+
+    close: function(){
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    },
 
     modify: function(name){
         //todo ajax to url
-        var arr = $("#foodname").find("input");
-        arr[0].attributes.removeNamedItem("readonly");
-        arr[1].attributes.removeNamedItem("readonly");
-        $("#" + name + "modifybtn").hide();
-        $("#" + name + "savebtn").show();
+        layer.open({
+            title: "菜品详情",
+            type: 2,
+            area: ['450px', '530px'],
+            fix: false, //不固定
+            maxmin: true,
+            content: '/web/html/newFood.html'
+        });
+        //var arr = $("#foodname").find("input");
+        //arr[0].attributes.removeNamedItem("readonly");
+        //arr[1].attributes.removeNamedItem("readonly");
+        //$("#" + name + "modifybtn").hide();
+        //$("#" + name + "savebtn").show();
     },
 
     delete: function(name){

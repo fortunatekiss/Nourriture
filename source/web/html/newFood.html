@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加菜品</title>
+    <script src="/web/js/jquery-1.12.3.min.js"></script>
+    <script src="/web/layer-v2.4/layer/layer.js"></script>
+    <script src="/web/js/food.js"></script>
+    <script src="/web/bootstrap/js/bootstrap.js"></script>
+    <script src="/web/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/web/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/web/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/web/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/web/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/web/css/newFood.css">
+</head>
+<body>
+<script type="text/javascript">
+//    alert(hello);
+</script>
+<div id="up">
+    <div id="img">
+        <img onclick="Foodns.openUpload()" src="" width="120px" height="120px">
+    </div>
+    <div id="name">
+        <div class="line">
+            <span>菜名:</span>&nbsp;&nbsp;&nbsp;
+            <input class="form-control">
+        </div>
+        <br><br>
+        <div class="line">
+            <span>价格:</span>&nbsp;&nbsp;&nbsp;
+            <input class="form-control">
+        </div>
+    </div>
+</div>
+<div id="down">
+    <div>
+        <span>材料:(使用分号分隔)</span><br>
+        <textarea class="text form-control" rows="3"></textarea>
+    </div>
+    <br>
+    <div>
+        <span>制作方法:</span><br>
+        <textarea class="text form-control" rows="5"></textarea>
+    </div>
+    <div id="button">
+        <button class="btn" onclick="Foodns.add()">确定</button>
+        <button class="btn" onclick="Foodns.close()">取消</button>
+    </div>
+</div>
+</body>
+</html>
