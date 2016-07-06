@@ -1,17 +1,30 @@
-<script src="/web/js/food.js"></script>
-<link rel="stylesheet" src="/web/css/food.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/web/css/food.css">
+    <script src="/web/js/food.js"></script>
+</head>
+<body>
 <div id="leftfoods">
-
+    <li class="nav-head"><a class="list-group-item-heading list-group-item">菜品分类</a></li>
+    <li><a class="list-group-item" onclick="Foodns.classify(this.text)" href="#">温热大餐</a></li>
+    <li><a class="list-group-item" href="#">清凉小菜</a></li>
+    <li><a class="list-group-item" href="#">美味甜点</a></li>
+    <li><a class="list-group-item" href="#">爽口饮料</a></li>
+    <li><a class="list-group-item" href="#">甜蜜套餐</a></li>
 </div>
 <div id="rightfoods">
     <div id="search">
-        <input class="form-control" type="text" style="display:inline; width: 20%; margin-left: 10px">
-        <button type="submit" class="btn">查找</button>
+        <input id="searchname" class="form-control" type="text" style="display:inline; width: 20%; margin-left: 10px">
+        &nbsp;&nbsp;&nbsp;
+        <button type="submit" class="btn" onclick="Foodns.searchname()">查找</button>
         &nbsp;&nbsp;&nbsp;
         <button class="btn" onclick="Foodns.open()">添加菜单</button>
     </div>
     <div id="foods">
-        <div id="foodname" class="food-div">
+        <div id="0" class="food-div">
             <div class="food-img">
                 <img src="/web/image/demo1.jpg" width="120px" height="120px">
             </div>
@@ -21,11 +34,11 @@
                 <br/>
                 <p>关于菜的原料的描述</p>
                 <br/>
-                <button type="button" id="foodname-modifybtn" name="foodname" class="btn btn-info"
+                <button type="button" id="foodname-modifybtn" name="0" class="btn btn-info"
                         onclick="Foodns.modify(this.name)">
                     <text>修改/查看详情</text>
                 </button>
-                <button type="button" name="foodname" class="btn btn-danger" onclick="Foodns.delete(this.name)">
+                <button type="button" name="0" class="btn btn-danger" onclick="Foodns.delete(this.name)">
                     <text>删除</text>
                 </button>
             </div>
@@ -60,3 +73,5 @@
         </div>
     </div>
 </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#leftnotify {
+    width: 20%;
+    background-color:inherit;
+    /*border: 1px solid #cccccc;*/
+    float: left;
+}
+
+#rightnotify {
+    width: 75%;
+    background-color: #FFFFFF;
+    border: 1px solid #cccccc;
+    float: right;
+}

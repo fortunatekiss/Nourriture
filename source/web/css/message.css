@@ -1,0 +1,45 @@
+#messagemain {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#messageleft {
+    border: 1px solid #cccccc;
+    background-color: #FFFFFF;
+    width: 60%;
+    height: auto;
+    display: inline;
+    padding: 1%;
+    /*margin-right: 30px;*/
+    float: left;
+}
+
+#messageright {
+    border: 1px solid #cccccc;
+    background-color: #FFFFFF;
+    width:35%;
+    height: auto;
+    display: inline;
+    padding: 1%;
+    float: right;
+}
+
+.full {
+    display: inline;
+    width: 99.5%;
+}
+
+.btn {
+    float: right;
+}
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: larger;
+}
+
+.half {
+    display: inline;
+    width: 75%;
+}

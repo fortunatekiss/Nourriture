@@ -5,30 +5,20 @@
     <title>Title</title>
     <script src="/web/js/jquery-1.12.3.min.js"></script>
     <script src="/web/layer-v2.4/layer/layer.js"></script>
+    <script src="/web/js/model/dishmodel.js"></script>
+    <script src="/web/js/model/restaurantmodel.js"></script>
     <script src="/web/js/index.js"></script>
     <script src="/web/js/food.js"></script>
     <script src="/web/bootstrap/js/bootstrap.js"></script>
     <script src="/web/bootstrap/js/bootstrap.min.js"></script>
 
-    <!--<script src="/web/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>-->
-    <!--<script src="/web/js/jquery-1.12.3.min.js"></script>-->
-    <!--<script src="/web/bootstrap/js/bootstrap.min.js"></script>-->
-    <script src="/web/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
-    <script src="/web/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
-
-    <script src="/web/echarts/echarts.min.js"></script>
-    <script src="/web/echarts/graph.js"></script>
-    <script src="/web/echarts/esl.js"></script>
     <link rel="stylesheet" href="/web/css/index.css">
-    <link rel="stylesheet" href="/web/css/food.css">
-    <link rel="stylesheet" href="/web/css/order.css">
     <link rel="stylesheet" href="/web/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/web/bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/web/bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/web/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/web/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="/web/layer-v2.4/layer/skin/layer.css">
-
 
 </head>
 <body style="background-color: #f8f6f8">
@@ -53,8 +43,17 @@
                 <li id="analyzepage" class="">
                     <a onclick="Indexns.loadAnalyze()">营业额统计</a>
                 </li>
+                <li id="userpage" class="">
+                    <a onclick="Indexns.loaduser()">查看关注用户</a>
+                </li>
+                <li id="messagepage" class="">
+                    <a onclick="Indexns.loadmessage()">发布信息</a>
+                </li>
+                <li id="notifypage" class="pull-right">
+                    <a onclick="Indexns.loadNotification()">信息中心</a>
+                </li>
                 <li class="dropdown pull-right">
-                    <a onclick="Indexns.loginIn()">登陆/注册</a>
+                    <a href="/web/html/restaurant/login.html" onclick="Indexns.loginout()">退出</a>
                 </li>
             </ul>
     </div>

@@ -5,6 +5,8 @@
     <title>添加菜品</title>
     <script src="/web/js/jquery-1.12.3.min.js"></script>
     <script src="/web/layer-v2.4/layer/layer.js"></script>
+    <script src="/web/js/model/dishmodel.js"></script>
+    <script src="/web/js/model/restaurantmodel.js"></script>
     <script src="/web/js/food.js"></script>
     <script src="/web/bootstrap/js/bootstrap.js"></script>
     <script src="/web/bootstrap/js/bootstrap.min.js"></script>
@@ -15,9 +17,6 @@
     <link rel="stylesheet" href="/web/css/newFood.css">
 </head>
 <body>
-<script type="text/javascript">
-//    alert(hello);
-</script>
 <div id="up">
     <div id="img">
         <img onclick="Foodns.openUpload()" src="" width="120px" height="120px">
@@ -25,24 +24,24 @@
     <div id="name">
         <div class="line">
             <span>菜名:</span>&nbsp;&nbsp;&nbsp;
-            <input class="form-control">
+            <input class="form-control" id="foodname">
         </div>
         <br><br>
         <div class="line">
             <span>价格:</span>&nbsp;&nbsp;&nbsp;
-            <input class="form-control">
+            <input class="form-control" id="foodprice">
         </div>
     </div>
 </div>
 <div id="down">
     <div>
         <span>材料:(使用分号分隔)</span><br>
-        <textarea class="text form-control" rows="3"></textarea>
+        <textarea class="text form-control" rows="3" id="foodresource"></textarea>
     </div>
     <br>
     <div>
         <span>制作方法:</span><br>
-        <textarea class="text form-control" rows="5"></textarea>
+        <textarea class="text form-control" rows="5" id="foodmethod"></textarea>
     </div>
     <div id="button">
         <button class="btn" onclick="Foodns.add()">确定</button>
@@ -50,4 +49,10 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+    $("#foodname").val(Foodns.dishes[0].name);
+    $("#foodprice").val(Foodns.dishes[0].price);
+    $("#foodresource").val(Foodns.dishes[0].resource);
+    $("#foodmethod").val(Foodns.dishes[0].method);
+</script>
 </html>

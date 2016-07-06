@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/web/js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <img id="img" src="/web/image/1.jpg" width="300px" height="300px">
+<p id="p">d</p>
+</body>
+<script>
+    var i = 5;
+    function a(){
+        i++;
+        var im = document.getElementById("img");
+        var source = "/web/image/"+ i.toString()+".jpg";
+        im.setAttribute("src", source);
+        setTimeout(function(){a();}, 2000);
+    }
+    a();
+</script>
+</html>

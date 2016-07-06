@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/web/css/notify.css">
+</head>
+<body>
+<div>
+    <div id="leftnotify">
+        <!--<ul class="nav nav-list" contenteditable="true">-->
+        <li><a class="list-group-item active" href="#">订单通知</a></li>
+        <li><a class="list-group-item" href="#">系统通知</a></li>
+        <li><a class="list-group-item" href="#">用户评论</a></li>
+        <li><a class="list-group-item" href="#">用户反馈</a></li>
+        <li><a class="list-group-item" onclick="Indexns.loadmessage()">发布信息</a> </li>
+        <!--</ul>-->
+    </div>
+    <div id="rightnotify">
+        <table class="table" contenteditable="true">
+            <thead>
+
+            <tr>
+                <th class="column">用户</th>
+                <th class="column">菜品</th>
+                <th class="column">时间</th>
+                <th class="column">价格</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="info">
+                <td>user</td>
+                <td>food;food1;food2...</td>
+                <td>2016/7/5 17:00</td>
+                <td>234</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

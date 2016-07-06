@@ -5,3 +5,11 @@
 .input-group {
     display: inline;
 }
+
+#ordermain {
+    border: 1px solid #cccccc;
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+}

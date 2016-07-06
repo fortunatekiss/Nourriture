@@ -59,6 +59,13 @@ var graphns = {
                         start : 0,
                         end : 100
                     },
+                    color: [
+                        //'#629fa6',
+                        '#577d9b',
+                        //'#cccccc',
+                        '#629fa6',
+                        //'#c33532',
+                    ],
                     legend: {
                         data: ['柱状图', '折线图'],
                         x: 'left'
@@ -105,7 +112,7 @@ var graphns = {
                                     show: true,
                                     position: 'insideBottom',
                                     textStyle: {
-                                        color: '#000'
+                                        color: '#D9EDF7'
                                     }
                                 }
                             }

@@ -28,7 +28,7 @@
 		.pic{width:400px;height:268px;position:absolute;}
 		.pic img{border:none;}
 		#adver ul{position:absolute;right:0;bottom:0;list-style-type:none;margin:0;padding:0;}
-		#adver ul li{float:left;height:20px;width:20px;background:url(trans.png) no-repeat;margin-left:1px;text-align:center;line-height:20px;font-size:12px;font-family:Tahoma, Geneva, sans-serif;}
+		#adver ul li{float:left;height:0px;width:0px;margin-left:1px;text-align:center;line-height:20px;font-size:12px;font-family:Tahoma, Geneva, sans-serif;}
 	</style>
 	<script src="/web/js/jquery-1.12.3.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
@@ -113,7 +113,7 @@
 
 <body>
 
-	<h1>Nourriture 注册页面</h1>
+	<h1>Nourriture 登录页面</h1>
 
 <div class="container">
 <div>
@@ -134,14 +134,14 @@
 			<div class="signin">
 		     	<form>
 		     		<p>用户名</p>
-			      	<input type="text" class="user" value="Nourriture" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nourriture';}" />
+			      	<input id="username" type="text" class="user" value="Nourriture" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nourriture';}" />
 		     		<p>邮箱</p>
 			      	<input type="text" class="mail" value="Nourriture@163.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nourriture@163.com';}" />
 			      	<p>密码</p>
+			      	<input id="password" type="password" class="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
+			      	<p>电话</p>
 			      	<input type="password" class="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
-			      	<p>重复密码</p>
-			      	<input type="password" class="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
-					<a class="button outline-inward">提交</a>
+					<a class="button outline-inward" onclick="login()">提交</a>
 			 	</form>
 			</div>
 		</div>
